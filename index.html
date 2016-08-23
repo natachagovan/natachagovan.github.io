@@ -20,7 +20,7 @@
 		<nav class="navbar navbar-inverse sidebar" role="navigation">
 		    <div class="container-fluid">
 		        <!-- Brand and toggle get grouped for better mobile display -->
-		        <div class="navbar-header">
+		        <div class="navbar-header id="header"">
 		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
 		                <span class="sr-only">Toggle navigation</span>
 		                <span class="icon-bar"></span>
@@ -57,50 +57,58 @@
 		        </div>
 		    </div>
 		</nav>
-	
-				<div id="home" class="content home main">
-				</div>
-				<!-- /Home -->
-				
-				<!-- CV -->
-				<div id="cv" class="panel">
-					<div class="content cv">
-					</div>
-				</div>
-				<!-- /CV -->
-				
-				<!-- About -->
-				<div id="about" class="panel">
-					<div class="content about">
-					</div>
-				</div>
-				<!-- /About -->
-				
-				<!-- Contact -->
-				<div id="contact" class="panel">
-					<div class="content contact">
-					</div>
-				</div>
-				<!-- /Contact -->
-				
-				<!-- Header with Navigation -->
+
+		<div class="main">
+		<!-- Content Here -->
+		</div>  
 
 
-				<div id="header">
-					
-				</div>
 
-		<!-- Home -->
+
+
+
+		
 		
 
 		<script>
 			$(function(){
 						//$("#header").load("views/menu.html");
-			      $(".home").load("views/home.html");
-			      $(".cv").load("views/cv.html"); 
-			      $(".about").load("views/about.html"); 
-			      $(".contact").load("views/contact.html"); 
-			    });
+						// $(".cv").load("views/cv.html"); 
+						// $(".about").load("views/about.html"); 
+						// $(".contact").load("views/contact.html"); 
+						
+			      $('#link-home').click(function(){ 
+			      		$('.main').fadeOut('slow', function(){
+			      		    $('.main').load("views/home.html", function(){
+			      		        $('.main').fadeIn('slow');
+			      		    });
+			      		}); 
+			      });
+			      $('#link-portfolio').click(function(){ 
+			      		$('.main').fadeOut('slow', function(){
+			      		    $('.main').load("views/cv.html", function(){
+			      		        $('.main').fadeIn('slow');
+			      		    });
+			      		}); 
+			      });
+			      $('#link-about').click(function(){ 
+			      		$('.main').fadeOut('slow', function(){
+			      		    $('.main').load("views/about.html", function(){
+			      		        $('.main').fadeIn('slow');
+			      		    });
+			      		});  
+			      });
+			      $('#link-contact').click(function(){ 
+			      		$('.main').fadeOut('slow', function(){
+			      		    $('.main').load("views/contact.html", function(){
+			      		        $('.main').fadeIn('slow');
+			      		    });
+			      		});  
+			      });
+
+			      $(".main").load("views/home.html");
+
+			});
 		</script>
 
 	</body>
