@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.icon-home {
+  font-size: 50px;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -132,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-tab-wrap .fh5co-tab-menu li a .icon {
   display: block;
   position: relative;
-  font-size: 22px;
+  font-size: 40px;
   bottom: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -364,8 +368,8 @@ figure {
 }
 
 .chart {
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto 30px auto;
   position: relative;
   text-align: center;
@@ -373,8 +377,8 @@ figure {
 .chart span {
   position: absolute;
   top: 50%;
-  left: 0;
-  margin-top: -30px;
+  left: 0px;
+  margin-top: -20px;
   width: 100%;
 }
 .chart span strong {
@@ -446,5 +450,12 @@ figure {
     padding-bottom: 1em;
   }
 }
+
+
+
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */
