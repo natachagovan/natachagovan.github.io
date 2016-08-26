@@ -57,7 +57,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0 0 30px 0;
 }
-
+h1 {
+  color: orange;
+}
 ::-webkit-selection {
   color: #fff;
   background: orange;
@@ -242,6 +244,9 @@ figure {
   margin-bottom: 1.5em;
 }
 
+.prof-img {
+  height: 200px;
+}
 .fh5co-counter .fh5co-number {
   font-size: 100px;
   color: orange;
@@ -452,7 +457,24 @@ figure {
 }
 
 
+#myProgress {
+  position: relative;
+  width: 70%;
+  height: 30px;
 
+  background-color: #262626;
+  color: #262626;
+}
+
+#myBar1, #myBar2, #myBar3, #myBar4, #myBar5, #myBar6, #myBar7, #myBar8, #myBar9 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  text-align: center;
+  /*color: rgba(0, 0, 0, 0.85);*/
+
+}
 
 
 

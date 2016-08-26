@@ -37,17 +37,33 @@
 		}, 200);
 	};
 
-	var pieChart = function() {
-		$('.chart').easyPieChart({
-			scaleColor: false,
-			lineWidth: 10,
-			lineCap: 'butt',
-			barColor: 'orange',
-			trackColor:	"#000000",
-			size: 100,
-			animate: 1000
-		});
-	};
+	// var pieChart = function() {
+	// 	$('.chart').easyPieChart({
+	// 		scaleColor: false,
+	// 		lineWidth: 10,
+	// 		lineCap: 'butt',
+	// 		barColor: 'orange',
+	// 		trackColor:	"#000000",
+	// 		size: 100,
+	// 		animate: 1000
+	// 	});
+	// };
+	var num = 1;
+
+	var move = function(id) {
+		console.log(id)
+	  var elem = document.getElementById(id);
+	  var width = 1;
+	  var id = setInterval(frame, 10);
+	  function frame() {
+	    if (width >= 100) {
+	      clearInterval(id);
+	    } else {
+	      width++;
+	      elem.style.width = width + '%';
+	    }
+	  }
+	}
 
 	var tabContainer = function() {
 		getHeight();
@@ -76,9 +92,34 @@
 			}, 500);
 
 			if ( pie === 'yes' ) {
+
 				setTimeout(function(){
-					pieChart();
+						move('myBar1');
+				}, 200);
+				setTimeout(function(){
+						move('myBar2');
+				}, 300);
+				setTimeout(function(){
+						move('myBar3');
+				}, 400);
+				setTimeout(function(){
+						move('myBar4');
+				}, 500);
+				setTimeout(function(){
+						move('myBar5');
+				}, 600);
+				setTimeout(function(){
+						move('myBar6');
+				}, 700);
+				setTimeout(function(){
+						move('myBar7');
 				}, 800);
+				setTimeout(function(){
+						move('myBar8');
+				}, 900);
+				setTimeout(function(){
+						move('myBar9');
+				}, 200);
 			}
 			
 		})
@@ -88,6 +129,8 @@
 	$(function(){
 		tabContainer();
 		tabClickTrigger();
+
+		
 
 	});
 
