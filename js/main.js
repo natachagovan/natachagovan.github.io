@@ -119,7 +119,32 @@
 				}, 900);
 				setTimeout(function(){
 						move('myBar9');
+				}, 1000);
+				setTimeout(function(){
+						move('myBar9');
+				}, 1100);
+
+				setTimeout(function(){
+						move('myBar10');
 				}, 200);
+				setTimeout(function(){
+						move('myBar11');
+				}, 300);
+				setTimeout(function(){
+						move('myBar12');
+				}, 400);
+				setTimeout(function(){
+						move('myBar13');
+				}, 500);
+				setTimeout(function(){
+						move('myBar14');
+				}, 600);
+				setTimeout(function(){
+						move('myBar15');
+				}, 700);
+				setTimeout(function(){
+						move('myBar16');
+				}, 800);
 			}
 			
 		})
